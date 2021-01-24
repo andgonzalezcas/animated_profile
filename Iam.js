@@ -1,4 +1,4 @@
-var things = ["Estudiante de Ing de sistemas", "Estudiante de FullStack en Web Development", "Amante de las papitas de Mc Donals", "Amante de las Donas de Dunkin Donuts", "Amante de las vistas panoramicas", "Ciclista Amateur"];
+var things = ["Estudiante de Ing de sistemas", "Estudiante de Web Development con aspiraciones a FullStack", "Amante de las papitas de Mc Donals", "Amante de las Donas de Dunkin Donuts", "Amante de las vistas panoramicas", "Ciclista Amateur"];
 
 const $Iam = document.getElementById('Iam');
 var _counter = 0;
