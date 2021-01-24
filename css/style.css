@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 32, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fredoka One', cursive;
+}
+
+.profile-container{
+    width: 90%;
+    min-width: 300px;
+    max-width: 400px;
+    height: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    color: rgb(221, 229, 194);
+    background-color: rgb(65, 65, 65);
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(3, 3, 3, 0.979);
+    font-size: 1.6rem;
+    padding: 25px 2.5%;
+}
+.icon-container{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 20px);
+}
+.icon-container .icon{
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 50%;
+    animation-name: rotation;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.profile-container .profile{
+    width: 85%;
+    text-align: center;
+}
+.profile-container .profile span{
+    color: rgb(251, 255, 0);
+}
+.profile .Iam{
+    display: inline-block;
+    position: relative;
+    animation-name: Iam;
+    animation-duration: 8s;
+    animation-timing-function: cubic-bezier(.8,.01,.2,1);
+    animation-iteration-count: infinite;
+    will-change: opacity, transform;
+}
+.profile-container .social{
+    width: 10%;
+}
+.social .social_github span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-image: url("../assets/github-icon-white-6.ong.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation-name: insert;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.9,.92,.92,.94);
+    animation-fill-mode: forwards;
+}
+.social .social__instagram span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-image: url("../assets/Instagram-icon-WHITE.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation-delay: .5s;
+    animation-name: insert;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.9,.92,.92,.94);
+    animation-fill-mode: forwards;
+}
+.social .social__twitter span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
+    background-image: url("../assets/twitter-icon-white.png");
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    animation-delay: 1s;
+    animation-name: insert;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.9,.92,.92,.94);
+    animation-fill-mode: forwards;
+}
+@keyframes Iam{
+    from{
+        opacity: 0;
+        transform: translate(-10px, 0);
+    }50%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }to{
+        opacity: 0;
+        transform: translate(0, 5px);
+    }
+}
+@keyframes rotation{
+    to{
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+@keyframes insert{
+    from{
+        transform: translateX(10px);
+    }to{
+        opacity: 1;
+    }
+}

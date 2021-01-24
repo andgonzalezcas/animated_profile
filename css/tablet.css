@@ -1,0 +1,19 @@
+.profile-container{
+    width: 90%;
+    min-width: 400px;
+    max-width: 600px;
+    height: 200px;
+    font-size: 3rem;
+}
+.social .social_github span{
+    width: 40px;
+    height: 40px;
+}
+.social .social__instagram span{
+    width: 40px;
+    height: 40px;
+}
+.social .social__twitter span{
+    width: 40px;
+    height: 40px;
+}
