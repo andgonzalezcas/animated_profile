@@ -15,7 +15,11 @@ body{
     justify-content: center;
     font-family: 'Fredoka One', cursive;
 }
-
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .profile-container{
     width: 90%;
     min-width: 300px;
