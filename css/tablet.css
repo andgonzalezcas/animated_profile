@@ -2,8 +2,14 @@
     width: 90%;
     min-width: 400px;
     max-width: 600px;
-    height: 200px;
+    height: 300px;
     font-size: 3rem;
+}
+.profile-container .profile{
+    margin-top: 40px;
+}
+.profile-container .social a{
+    font-size: 2rem;
 }
 .social .social_github span{
     width: 40px;
